@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
   *main - print 123456789abcdef
-  *Return : return 0 if succes
+  *Return: return 0 if succes
   */
 int main(void)
 {
