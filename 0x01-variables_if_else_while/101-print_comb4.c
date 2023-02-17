@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
  * main - print numbers from 00 to 99.
-(*
  * Return: 0 on success
  */
 int main(void)
@@ -16,7 +15,7 @@ int main(void)
 		{
 			while (k <= '9')
 			{
-				if (i < j && j < k)
+				if ((i < j) && (j < k))
 				{
 					putchar(i);
 					putchar(j);
