@@ -15,7 +15,6 @@ int main(void)
 		printf("%c", ch);
 		ch++;
 	}
-	
 	for (ch1 = 'A'; ch1 <= 'Z'; ch1++)
 	{
 		printf("%c", ch1);
