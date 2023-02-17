@@ -5,7 +5,7 @@
 /* betty style doc for function main goes there */
 /**
   *main - function get random number and display positive or nigative
-  * return:  return 0 if success
+  *return:  0 if success
   */
 int main(void)
 {
