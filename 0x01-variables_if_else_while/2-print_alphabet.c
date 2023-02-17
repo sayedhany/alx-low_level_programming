@@ -11,7 +11,7 @@ int main(void)
 	ch = 'a';
 	while (ch <= 'z')
 	{
-		printf("%c",ch);
+		printf("%c", ch);
 		ch++;
 	}
 	printf("\n");
