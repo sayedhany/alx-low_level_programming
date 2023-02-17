@@ -5,15 +5,13 @@
   */
 int main(void)
 {
-	int n;
-
-	for (n = 0; n < 100; n++)
+	int n = '0';
+	
+	while (n <= '9')
 	{
-		if (n % 10 == 0)
-		{
-			printf("%d", n/10);
-		}
+		putchar(n);
+		n++;
 	}
-	printf("\n");
+	putchar('\n');	
 	return (0);
 }
