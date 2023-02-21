@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
-  * _islower - return 1 if lower else return 0;
+  * _islower - check if lower or not
+  * @c: char which we will check it
+  *
+  * Return: 1 if lower 0 or not
   */
 
 int _islower(int c)
