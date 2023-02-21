@@ -1,8 +1,6 @@
 #include "main.h"
 /**
-  *
-  *
-  *
+  *jack_bauer - print hours and minutes
   */
 void jack_bauer(void)
 {
