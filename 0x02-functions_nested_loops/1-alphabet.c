@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-  * print_alphabe:xt - prints the english alphabet from a-z.
-  * Return: Nothing.
-  */
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ */
 void print_alphabet(void)
 {
 	char ch = 'a';
