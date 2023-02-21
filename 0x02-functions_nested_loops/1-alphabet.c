@@ -1,9 +1,6 @@
-#include "main.h"
-/**
-  *main - print alphapet lowercase
-  *Return: return 0 if success
-  */
-void print_alphabet()
+#include "1-main.c"
+
+void print_alphabet(void)
 {
 	char ch = 'a';
 
@@ -13,9 +10,4 @@ void print_alphabet()
 		ch++;
 	}
 	_putchar('\n');
-}
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
