@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * _isaplpha - check if the char is alphabet or not
+  * _isalpha - check if the char is alphabet or not
   * @c: char which will be checked
   *
   * Return: i if alph 0 or not
