@@ -12,7 +12,7 @@ void print_alphabet()
 		_putchar(ch);
 		ch++;
 	}
-	_putchar('\z');
+	_putchar('\n');
 }
 int main(void)
 {
