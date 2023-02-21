@@ -1,9 +1,9 @@
 #include "main.h"
 /**
   *_abs - abs the value
-  *@num: number to checked 
+  *@num: number to checked
   *
-  *Return absolute numnber
+  *Return: absolute numnber
   */
 int _abs(int num)
 {
@@ -11,5 +11,5 @@ int _abs(int num)
 	{
 		return (-1 * num);
 	}
-	return num;
+	return (num);
 }
