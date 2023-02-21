@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+  * main - print sum numbers
+  *Return: return 0 if success
+  */
 int main(void)
 {
 	int sum, i;
