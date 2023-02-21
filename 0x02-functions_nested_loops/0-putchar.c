@@ -1,10 +1,19 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
-  *main - print _putchar word
-  *Return: return 0 if success
+  *main - print _putchar
+  *Return: 0 if success
   */
+
 int main(void)
 {
-	printf("_putchar\n");
-	return (0);
+	int ch[] = "_putchar";
+	int num;
+
+	for(num = 0; num < 8; num++)
+	{
+		_putchar(ch[num]);
+	}
+	_putchar('\n');
+	return (0);		
 }
