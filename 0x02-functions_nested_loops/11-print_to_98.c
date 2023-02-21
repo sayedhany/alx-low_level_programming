@@ -6,12 +6,13 @@
 void print_to_98(int n)
 {
 	int num;
+	
 	for (num = n; num <= 98; num++)
 	{
-		putchar((num / 10) + '0');
-		putchar((num % 10) + '0');
-		putchar(',');
-		putchar(' ');
+		_putchar((num / 10) + '0');
+		_putchar((num % 10) + '0');
+		_putchar(',');
+		_putchar(' ');
 	}
-	putchar('\n');
+	_putchar('\n');
 }
