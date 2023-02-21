@@ -3,15 +3,19 @@
   *main - print alphapet lowercase
   *Return: return 0 if success
   */
-
-int main(void)
+void print_alphabet()
 {
 	char ch = 'a';
-	
+
 	while (ch <= 'z')
 	{
 		_putchar(ch);
+		ch++;
 	}
-	_putchar('\n');
+	_putchar('\z');
+}
+int main(void)
+{
+	print_alphabet();
 	return (0);
 }
