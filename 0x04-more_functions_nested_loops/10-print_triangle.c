@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-  * print_triangle - print
+  * print_triangle - print triangle shape
   * @size: number of columns
   */
 
-void print_reiangle(int size)
+void print_triangle(int size)
 {
 	int i, j, k;
 
@@ -15,11 +15,11 @@ void print_reiangle(int size)
 	{
 		for (i = 0; i < size; i++)
 		{
-			for (j = 0; j < size - 1; j++)
+			for (j = i; j < size - 1; j++)
 			{
 				_putchar(' ');
 			}
-			for (k = i - 1; k < size; k++)
+			for (k = 0; k < i + 1; k++)
 			{
 				_putchar('#');
 			}
