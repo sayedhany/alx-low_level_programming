@@ -2,8 +2,9 @@
 
 /**
   * _isupper - check if c is upper or not.
-  *@c: char which will be checked.
-  * Return: return 1 if upper 0 if not.
+  * @c: char which will be checked.
+  *
+  *Return: return 1 if upper 0 if not.
   */
 int _isupper(int c)
 {
