@@ -3,9 +3,8 @@
 /**
   * main - print fizz if 3 buzz if 5 fizzbuzz if both
   *
-  * Return: 0 if success
   */
-int main(void)
+void main(void)
 {
 	int i;
 
@@ -29,5 +28,4 @@ int main(void)
 		}
 	}
 	_putchar('\n');
-	return (0);
 }
