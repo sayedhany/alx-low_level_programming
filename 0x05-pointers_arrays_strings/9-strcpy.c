@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
-  * _strbpy - concat two string
+  * _strcpy - concat two string
   * @dest: first string
   * @src: second string
   *
