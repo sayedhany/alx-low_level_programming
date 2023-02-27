@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 /**
   * _strbpy - concat two string
   * @dest: first string
@@ -8,5 +8,5 @@
   */
 char *_strcpy(char *dest, char *src)
 {
-	return *(strcpy(dest, src));
+	return (strcpy(dest, src));
 }
