@@ -5,7 +5,7 @@
   * Return: the length of s
   */
 
-int _strlin(char *s)
+int _strlen(char *s)
 {
 	int i;
 	int count;
@@ -15,5 +15,5 @@ int _strlin(char *s)
 	{
 		count++;
 	}
-	return count
+	return (count);
 }
