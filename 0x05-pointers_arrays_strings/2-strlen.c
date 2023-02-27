@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
-  * _strlin - give us the number of string
+  * _strlen - give us the number of string
   * @s: input
   * Return: the length of s
   */
