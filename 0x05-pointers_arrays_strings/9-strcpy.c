@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
   * _strbpy - concat two string
   * @dest: first string
