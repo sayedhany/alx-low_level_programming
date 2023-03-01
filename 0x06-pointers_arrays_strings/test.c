@@ -4,6 +4,7 @@ char *_strcat(char *dest, char *src) {
         while (*dest != '\0') { // Find the end of the destination string
 		     
 			printf("%c\n", *dest);
+			printf("%p\n", dest);
 			dest++;
 			    }
 	while (*src != '\0') { // Copy the source string to the end of the destination string
