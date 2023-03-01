@@ -25,5 +25,4 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	dist[len + i] = '\0';
 	return (dest);
-	
 }
