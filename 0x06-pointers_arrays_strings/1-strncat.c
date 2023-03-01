@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * _strcat - concat number of strings from src to dest
+ * _strncat - concat number of strings from src to dest
  * @dest: string
  * @src: string
  * @n: number of strings from src
  * Return: address of concat string
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int len;
 	int i;
