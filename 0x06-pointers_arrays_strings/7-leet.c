@@ -12,20 +12,15 @@ char *leet(char *s)
 	char small[] = {'a', 'e', 'o', 't', 'l'};
 	char capital[] = {'A', 'E', 'O', 'T', 'L'};
 
-	for (i = 0; i < 5; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; s[j]; j++)
+		for (j = 0; j < 5; j++)
 		{
-			if (s[j] == small[i] || s[j] == capital[i])
+			if (s[i] == small[j] || s[i] == capital[j])
 			{
-				*result++ = *leetspeak[i];
-			}
-			else
-			{
-				*result++ = s[j];
+				result[i] = *leetspeak[j];
 			}
 		}
-		result = s;
 	}
-	return (s);
+	return (result);
 }
