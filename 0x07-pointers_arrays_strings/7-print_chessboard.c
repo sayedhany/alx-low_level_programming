@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_chessboard - check the code for Holberton School students.
+ * print_chessboard - check the code.
  * @a:
  *
  */
