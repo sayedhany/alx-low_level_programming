@@ -8,12 +8,21 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, count;
+	unsigned int i, j, count;
 
-	for (i = 0; accept[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		count++;
+		for (j = 0; accept[i] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				count++;
+				break;
+			}
+		}
+		if (accept[j] = '\0')
+			break;
 	}
-	return (++count);
+	return (count);
 
 }
