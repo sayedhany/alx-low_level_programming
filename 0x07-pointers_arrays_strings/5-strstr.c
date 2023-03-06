@@ -9,20 +9,24 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack != '\0')
-	{
-		char *duplicate = haystack;
+	 char *p = haystack;
+	 char *q = needle;
 
-		while (*haystack == *needle && *haystack != '\0' && *needle != '\0')
-		{
-			needle++;
-			haystack++;
-		}
-		if (!*needle != '\0')
-		{
-			return (duplicate);
-		}
-		haystack++;
-	}
-	return (0);
+	 while (*p)
+	 {
+		 if (*p == *q)
+		 {
+			 char *tmp_p = p;
+			 char *tmp_q = q;
+			 while (*tmp_p && *tmp_q && *tmp_p == *tmp_q)
+			 {
+				 tmp_p++;
+				 tmp_q++;
+			 }
+			 if (!*tmp_q)
+				 return (p);
+		 }
+		 p++;
+	 }
+	 return (NULL);
 }
