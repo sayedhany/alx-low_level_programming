@@ -6,27 +6,39 @@
  * @needle: string
  * Return: string
  */
-
 char *_strstr(char *haystack, char *needle)
 {
-	 char *p = haystack;
-	 char *q = needle;
-
-	 while (*p)
-	 {
-		 if (*p == *q)
-		 {
-			 char *tmp_p = p;
-			 char *tmp_q = q;
-			 while (*tmp_p && *tmp_q && *tmp_p == *tmp_q)
-			 {
-				 tmp_p++;
-				 tmp_q++;
-			 }
-			 if (!*tmp_q)
-				 return (p);
-		 }
-		 p++;
-	 }
-	 return (NULL);
+	while (*haystack)
+	{
+		if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
+		{
+			return (haystack);
+		}
+		else
+		{
+			haystack++;
+		}
+	}
+	return (0);
 }
+/**
+ * coincidence - define if the string b is inside a.
+ * @a: source string
+ * @b: string to be searched
+ *
+ * Return: 1 if there is coincidence, otherwise 0.
+ */
+int coincidence(char *a, char *b)
+{
+	while (*b && *b == *a)
+	{
+		b++;
+		a++;
+	}
+
+	if (*b == '\0')
+		return (1);
+	else
+		return (0);
+}
+
