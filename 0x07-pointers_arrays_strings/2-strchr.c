@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strchr -check character
+ * _strchr - check character
  * @s: string of characters
  * @c: char
  * Return: string
@@ -14,8 +14,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			s++;
-			return (s); 
+			return (&s[i]); 
 		}
 	}
 	return (NULL);
