@@ -8,10 +8,11 @@
  */
 int isPrime(int n, int i)
 {
-	if (n % i == 0 && i < n && i != 1)
+	if (i == 1)
+		return (1);
+	if (n % 1 == 0 && i > 0)
 		return (0);
-	isPrime(n, ++i);
-	return (1);
+	return (isPrime(n, i - 1));
 }
 /**
  * is_prime_number - check if the number is prime of not
