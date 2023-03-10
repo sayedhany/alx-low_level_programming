@@ -1,4 +1,4 @@
-char *_strcat(char *dest, char *src)
+char *_strchr(char *s, char c)
 {
-	return (dest);
+	return (s);
 }
