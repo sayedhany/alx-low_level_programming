@@ -22,10 +22,10 @@ int len(char *str)
  */
 char *_strdup(char *str)
 {
-	int length;
+	int length, i;
 	char *s;
 
-	if (*str == NULL)
+	if (len(str) == 0)
 		return (0);
 	length = len(str);
 	s = malloc(length * sizeof(char));
