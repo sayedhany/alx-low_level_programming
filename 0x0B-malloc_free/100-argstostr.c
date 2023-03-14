@@ -18,5 +18,5 @@ char *argstostr(int ac, char **av)
 		s[i] = av[i + 1];
 	}
 	s[i] = '\0';
-	return (s);
+	return (*s);
 }
