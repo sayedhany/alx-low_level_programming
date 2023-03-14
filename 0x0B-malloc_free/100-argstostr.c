@@ -8,11 +8,11 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, j, size;
+	int i, size;
 	char *s;
 
 	size = ac - 1;
-	s = malloc(sizeof(char) * size);
+	s = malloc(sizeof(char *) * size);
 	for (i = 0; i < size; i++)
 	{
 		s[i] = av[i + 1];
