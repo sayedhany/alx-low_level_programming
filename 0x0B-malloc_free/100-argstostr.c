@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 		return (0);
 	for (i = 0; i < size; i++)
 	{
-		s[i] = *av[i + 1];
+		s[i] = *av[i];
 	}
 	s[i] = '\0';
 	return (s);
