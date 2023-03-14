@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
  * argstostr - concate arguments
  * @ac: number of arguments
@@ -8,7 +9,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, size;
+	int i, j, size;
 	char **s;
 
 	if (ac == 0 || av == NULL)
@@ -19,8 +20,16 @@ char *argstostr(int ac, char **av)
 		return (0);
 	for (i = 0; i < size; i++)
 	{
-		*s[i] = av[i];
+		s[i] = malloc(sizeof(char) * strlen(av[i]));
+		if(s[i] == NULL)
+			return (0);
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			s[i][j] = av[i][j];
+		}
+		s[i][j] = '\0';
+
 	}
-	*s[i] = '\0';
+	s[i][j] = '\0';
 	return (s);
 }
