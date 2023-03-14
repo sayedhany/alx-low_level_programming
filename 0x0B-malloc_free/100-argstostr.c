@@ -9,14 +9,18 @@
 char *argstostr(int ac, char **av)
 {
 	int i, size;
-	char **s;
+	char *s;
 
+	if (acc == 0 || av == NULL)
+		return (0)
 	size = ac - 1;
 	s = malloc(sizeof(char *) * size);
+	if (s == NULL)
+		return (0);
 	for (i = 0; i < size; i++)
 	{
-		s[i] = av[i + 1];
+		s[i] = *av[i + 1];
 	}
 	s[i] = '\0';
-	return (*s);
+	return (s);
 }
