@@ -9,7 +9,7 @@
 char *argstostr(int ac, char **av)
 {
 	int i, size;
-	char *s;
+	char **s;
 
 	size = ac - 1;
 	s = malloc(sizeof(char *) * size);
