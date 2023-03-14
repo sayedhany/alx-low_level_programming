@@ -31,5 +31,5 @@ char *argstostr(int ac, char **av)
 
 	}
 	s[i][j] = '\0';
-	return (s);
+	return (*s);
 }
