@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
  * string_nconcat - concate string
  * @s1: string one
@@ -10,7 +11,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j, len1, len2, sum;
+	unsigned int i, j, len1, len2, sum;
 	char *str;
 
 	if (s1 == NULL || s1 == NULL)
