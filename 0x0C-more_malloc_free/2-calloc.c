@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+
 /**
  * _calloc - reserve amount of memory
  * @nmemb: number of things
@@ -11,12 +11,14 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *str;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (0);
 	str = malloc(nmemb * size);
 	if (str == NULL)
 		return (0);
-	memset(ptr, 0, nmemb * size);
+	for (i = 0; i < (nmemb * size); i++)
+		str[i] = 0;
 	return (str);
 }
