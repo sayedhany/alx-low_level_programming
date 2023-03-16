@@ -1,5 +1,5 @@
 #include "main.h"
-#inclide <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
