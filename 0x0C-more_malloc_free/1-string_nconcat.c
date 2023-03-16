@@ -7,6 +7,7 @@
  * string_nconcat - concate string
  * @s1: string one
  * @s2: string two
+ * @n: number of strings
  * Return: string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
