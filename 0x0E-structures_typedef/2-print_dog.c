@@ -5,6 +5,7 @@
  * print_dog - print dog
  * @d: dog struct
  */
+
 void print_dog(struct dog *d)
 {
 	if (d != NULL)
