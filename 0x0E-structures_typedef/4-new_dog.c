@@ -2,33 +2,32 @@
 #include <stdlib.h>
 
 /**
- * new_dog - new dog
- * @name: name
- * @age: age
- * @owner: owner name
- * Return: new dog
+ * new_dog - entry point
+ * @name: string from main, name of pet
+ * @age: number from main, age of pet
+ * @owner: string from main, owner of pet
+ * Return: p
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new;
-	
-	new = malloc(sizeof(dog_t));
-	if (new == NULL)
-		return (0);
+	dog_t *p;
+
+	p = malloc(sizeof(dog_t));
+	if (p == NULL)
+		return (NULL);
 	if (name == NULL)
 	{
-		free(new);
+		free(p);
 		free(owner);
-		return (0);
+		return (NULL);
 	}
 	if (owner == NULL)
 	{
-		free(new);
+		free(p);
 		free(name);
-		return (0);
+		return (NULL);
 	}
-	new->name = name;
-	new->age = age;
-	new->owner = owner;
-	return (p);
+	p->name = name;
+	p->age = age;
+	p->owner = owner;
 }
