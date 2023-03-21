@@ -4,7 +4,7 @@
 /**
  * dup_string - Duplicates a string passed into a newly allocated space in
  * memory
- * @s: Pointer to the first character in the source string
+ * @s: s
  *
  * Return: Pointer to the first character in the newly allocated and copied
  * string
@@ -30,11 +30,9 @@ char *dup_string(char *s)
 
 /**
  * new_dog - Makes a new dog with the given parameters
- * @name: Pointer to the first character of the string of the name of the dog
- * to be created
- * @age: Age of the dog to be created as a float
- * @owner: Pointer to the first character of the string of the owner of the dog
- * to be created
+ * @name: name
+ * @age: age
+ * @owner: owner
  *
  * Return: Pointer to the new `dog_t` with all of the given attributes
  */
@@ -71,7 +69,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 }
 
 /**
- * free_dog - Frees all memory allocated by a dog_t struct
+ * free_dog - Frees all memory allocated
  * @d: Pointer to the struct to be freed
  */
 void free_dog(dog_t *d)
