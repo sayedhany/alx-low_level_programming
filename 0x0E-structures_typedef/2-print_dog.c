@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_dog - print dog
- * @d: dog struct
+ * print_dog -entry point
+ * @d: Entry of struct
  */
 void print_dog(struct dog *d)
 {
