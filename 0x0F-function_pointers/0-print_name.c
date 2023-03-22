@@ -1,6 +1,5 @@
 #include "function_pointer.h"
 #include <stdlib.h>
-
 /**
  * print_name - print name
  * @name: string
