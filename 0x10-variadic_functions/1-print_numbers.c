@@ -6,12 +6,13 @@
  * @separator: char sprate numbers
  * @n: number of arguments
  */
-void print_numbers(const char* separator, const unsigned int n, ...)
+
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	int value;
-
 	va_list nums;
+
 	va_start(nums, n);
 	for (i = 0; i < n; i++)
 	{
@@ -21,7 +22,7 @@ void print_numbers(const char* separator, const unsigned int n, ...)
 			printf("%d", value);
 			break;
 		}
-		printf("%d%s",value, separator); 
+		printf("%d%s", value, separator);
 	}
 	va_end(nums);
 	putchar('\n');
