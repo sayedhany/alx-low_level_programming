@@ -6,7 +6,7 @@
  */
 size_t list_len(const list_t *h)
 {
-	const size_t *ptr = h;
+	const list_t *ptr = h;
 	size_t count = 0;
 
 	while (ptr->next != NULL)
@@ -14,5 +14,5 @@ size_t list_len(const list_t *h)
 		count++;
 		ptr = ptr->next;
 	}
-	return (count)
+	return (count);
 }
