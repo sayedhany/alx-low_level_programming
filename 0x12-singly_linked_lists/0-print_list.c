@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#inclide "lists.h"
+#include "lists.h"
 
 /**
  * print_list - print list of elements of linked list
@@ -10,14 +8,17 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t n;
+	const list_t *ptr = h;
+	size_t sum = 0;
 
-	n = 0;
-	while (h->next != NULL)
+	while (ptr != NULL)
 	{
-		printf("%s", h->str);
-		h = h->next;
-		n++;
+		if (ptr->str != NULL)
+			printf("[%d] %s\n", ptr->len, ptr->str);
+		else
+			printf("[0] (nil)\n");
+		sum += 1;
+		ptr = ptr->next;
 	}
-	return (n);
+	return (sum);
 }
