@@ -25,6 +25,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
  * delete_nodeint_at_index - delete at index
  * @head: head
  * @index: index
+ * Return: 1 if success
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
