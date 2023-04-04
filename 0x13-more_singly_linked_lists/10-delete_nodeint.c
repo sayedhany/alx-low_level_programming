@@ -28,9 +28,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *prev, *curr = *head;
+	listint_t *prev, *curr;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (-1);
 	prev = get_nodeint_at_index(*head, index - 1);
 	curr = get_nodeint_at_index(*head, index);
