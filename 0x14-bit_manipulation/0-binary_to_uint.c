@@ -9,13 +9,22 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int num, i, j;
+	unsigned int num, curr;
+	int len;
 
-	for (i = strlen(b) - 1, j = 0; i > 0; i--, j++)
-	{
-		if (b[i] == 0 || b[i] == 1)
-			num += pow(2.0, (double) b[i]);
+	num = 0;
+	curr = 1;
+
+	if (b == NULL)
 		return (0);
+
+	for (len = strlen(b) - 1; len >= 0; len--)
+	{
+		if (b[len] != '0' && b[len] != '1')
+			return (0);
+
+		num += (b[len] - '0') * curr;
+		curr *= 2;
 	}
-	return ((unsigned int)num)
+	return (num);
 }
