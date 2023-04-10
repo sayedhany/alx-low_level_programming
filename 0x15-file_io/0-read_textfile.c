@@ -7,7 +7,6 @@
  * @letters: letters
  * Return: written
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t file, letter, write1;
