@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * read-textfile - read text file
+ * read_textfile - read text file
  * @filename: filename
  * @letters: letters
  * Description: Write file
