@@ -6,6 +6,7 @@
  * read-textfile - read text file
  * @filename: filename
  * @letters: letters
+ * Description: Write file
  * Return: written
  */
 ssize_t read_textfile(const char *filename, size_t letters)
