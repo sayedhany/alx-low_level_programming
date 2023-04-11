@@ -10,9 +10,10 @@
  */
 int main(int argc, char *argv[])
 {
-	int fiel1, file2;
+	int file1, file2;
 	int num1 = 1024, num2 = 0;
 	char buf[1024];
+
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	file1 = open(argv[1], O_RDONLY);
@@ -41,10 +42,10 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
 
-	if (close(file1) i== -1)
+	if (close(file1) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file1), exit(100);
 
 	if (close(file2) == -1)
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file2), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file2), exit(100);
 	return (0);
 }
