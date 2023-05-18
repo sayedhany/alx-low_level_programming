@@ -30,7 +30,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		count++;
 	}
 	resNode->prev->next = resNode->next;
-	if (resNode->next == NULL)
+	if (resNode->next)
 		resNode->next->prev = resNode->prev;
 	if (resNode->next == NULL)
 	{
