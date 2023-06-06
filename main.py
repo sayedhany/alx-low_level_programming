@@ -42,11 +42,12 @@ def solve_nqueens(board, col):
 
 def print_solution(board):
     # Print the board configuration
+    solution = []
     for i in range(N):
         for j in range(N):
-            print(board[i][j], end=' ')
-        print()
-    print()
+            if board[i][j] == 1:
+                solution.append([i, j])
+    print(solution)
 
 # Main program
 if __name__ == "__main__":
