@@ -9,6 +9,7 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index;
+
 	hash_node_t *current;
 	if (strcmp(key, "") == 0 || key == NULL || ht == NULL)
 		return (NULL);
@@ -23,6 +24,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	}
 	if (current == NULL)
 		return (NULL);
-	elsee
+	else
 		return (current->value);
 }
