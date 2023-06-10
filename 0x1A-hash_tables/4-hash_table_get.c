@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - Get a value 
+ * hash_table_get - Get a value
  * @ht: Hash table.
  * @key: Key.
  * Return: The value if works, NULL if doesn't.
@@ -9,8 +9,8 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index;
-
 	hash_node_t *current;
+
 	if (strcmp(key, "") == 0 || key == NULL || ht == NULL)
 		return (NULL);
 
